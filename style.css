@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+      font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+     color: #333;
+}
+
+.mydiv {
+    border: 1px solid #ddd;
+  padding: 40px;
+   background-color: #fff;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 80%;
+   margin: 40px auto;
+  max-width: 1200px;
+    text-align: center;
+}
+
+#cmy {
+    border: 2px solid rgb(100, 22, 173);
+    border-radius: 12px;
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+     background-color: rgb(100, 22, 173);
+     color: white;
+      padding: 15px 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#cmy:hover {
+     background-color: rgb(85, 18, 147);
+    transform: scale(1.05);
+}
+
+p.heading {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #555;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin: 30px 0 10px;
+}
+
+span {
+    font-size: 1.2em;
+     color: #777;
+    margin-top: 10px;
+     display: block;
+}
+
+hr {
+    width: 60%;
+     border: none;
+    border-top: 2px solid #ddd;
+     margin: 20px auto;
+}
+
+.grid {
+    display: flex;
+      flex-wrap: wrap;
+     justify-content: space-around;
+    gap: 40px;
+     margin-top: 40px;
+}
+
+.top-profile, .profile {
+      display: flex;
+    flex-direction: column;
+      justify-content: center;
+    align-items: center;
+      background-color: #fff;
+    border: 1px solid #ddd;
+      border-radius: 12px;
+    padding: 20px;
+     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-profile {
+    margin-bottom: 40px;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+    width: 150px;
+     height: 150px;
+    background-color: #f0f0f0;
+     border-radius: 50%;
+    margin-bottom: 20px;
+     object-fit: cover;
+}
+
+.profile-name {
+    color: #333;
+     font-size: 1.6em;
+    margin: 10px 0;
+}
+
+.profile-role {
+    color: #888;
+     font-size: 1.1em;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .mydiv {
+        padding: 20px;
+    }
+
+    p.heading {
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
